@@ -12,6 +12,7 @@ header {
     padding: 5px;
     background-color: #0b0b31;
     color: #f1f2f5;
+    text-emphasis-color: #f1f2f5;
     
 }
 
@@ -41,6 +42,7 @@ nav ul.flexbox {
 
 nav ul.flexbox li.button {
     margin-left: 20px;
+    color: #dddddd;
     
 }
 
@@ -156,17 +158,22 @@ nav ul.flexbox2 li.button a {
 /* Just below "Think Big" */
 .flex-container {  
     display: flex;
-    justify-content: left;
-    align-items: left;
-    padding: 5%;
-    margin-right: 5%;
-    margin-left: 5%;
-    border: rgba(0, 0, 0, 0.1); /* border with transparency */
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Add a thin border on top */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left:  auto;
+    margin-right: 27%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding: 10px;
+    width: 50%;
+    
+    border: rgba(0, 0, 0, 0.3); /* border with transparency */
+    border-top: 1px solid rgba(0, 0, 0, 0.5); /* Add a thin border on top */
 }
 
 .flex-item {
-    border-right: 1px solid rgba(0, 0, 0, 0.1); /* Add a thin border between sections */
+    border-right: 1px solid rgba(0, 0, 0, 0.5); /* Add a thin border between sections */
     padding: 0 10px; /* Add some padding for spacing */
 }
 
@@ -243,11 +250,11 @@ footer {
 }
 
 .flex-item4 {
-    flex:.5;
+    flex: .4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 5px;
+    margin-right: 0px;
     align-items: flex-start;
     border-right: #cdd1d1c5;
 }
@@ -261,7 +268,8 @@ footer {
 }
 
 .flex-item5 {
-    flex:.7;
+
+    flex: .5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,7 +308,7 @@ footer {
 }
 
 .flex-item6 {
-    flex:.7;
+    flex: .4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
