@@ -80,20 +80,23 @@ nav ul.flexbox li.button a {
 /*Title line and hyperlinks*/
 .header-container2 img{
     display: flex;
+    flex-direction: row;
+    padding-right: 29%;
     justify-content: left;
     align-items: left;
-    padding: 10px;
-    margin-right: 21%;
-    background-color: #f1f2f5;
-    color: #f1f2f5;
+    
+    
 }
 .header-container2 {
     display: flex;
     justify-content: center;
-    align-items: line;
-    padding: 10px;
+    align-items: center;
+    padding-top: 10px;
     background-color: #f0f0f0; 
     width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+    position: top;
 }
 
 nav ul.flexbox2 {
@@ -104,7 +107,7 @@ nav ul.flexbox2 {
 }
 
 nav ul.flexbox2 li.button {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 nav ul.flexbox2 li.button a {
@@ -227,8 +230,9 @@ footer {
 
 .footer-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
     height: fit-content;
     width: auto;
     padding: 20px;
@@ -240,9 +244,11 @@ footer {
 
 .flex-item4 {
     flex:.5;
+    display: flex;
     flex-direction: column;
-    margin-right: px;
-    align-items: left;
+    justify-content: space-between;
+    margin-right: 5px;
+    align-items: flex-start;
     border-right: #cdd1d1c5;
 }
 
@@ -256,11 +262,14 @@ footer {
 
 .flex-item5 {
     flex:.7;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: flex-start;
+    margin-bottom: flex-end;
     margin-right: 10px;
-    align-items: left;
+    align-items: stretch;
     border-right: #cdd1d1c5;
-    height: 100%;
 }
 
 .flex-item5 h2 {
@@ -271,11 +280,31 @@ footer {
     font-size: 200%;
 }
 
+.flex-item5 p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: left;
+    font-size: 20px;
+}
+
+.flex-item5 li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: justify;
+    font-size: auto;
+    height: auto;
+}
+
 .flex-item6 {
     flex:.7;
+    display: flex;
     flex-direction: column;
-    margin-right: px;
-    align-items: left;
+    justify-content: space-between;
+    align-items: flex-start;
     border-right: #cdd1d1c5;
 }
 
@@ -331,16 +360,38 @@ footer {
 }
 
 
+
+.more-button2 {
+    background-color: #0b0b31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: auto; /* Push the button to the bottom */
+    cursor: pointer;
+    display: flex;
+    
+}
+
+/*Copyright portion of footer*/
 .footer-container2 {
     display: flex;
     justify-content: left;
     align-items: left;
-    padding-bottom: 0px;
-    padding-left: 5%;
     background: #0b0b31;
     width: 100vw;
     bottom: 0;
     position: relative;
     margin-top: 0px;
-    margin-right: 5%;
 }
+
+.footer-container2 p {
+    margin: 0;
+    padding: 10px;
+    color: #f1f2f5;
+    font-size: 12px;
+}
+/*!!Do not go below!!*/
