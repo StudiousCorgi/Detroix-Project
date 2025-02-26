@@ -1,12 +1,13 @@
 .oswald> {
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
+    font-stretch: normal;
     font-style: normal;
   }
 
 header {
-    font-family: Oswald, serif;
+    font-family: "Oswald", serif;
     margin: 0;
     padding: 5px;
     background-color: #0b0b31;
@@ -16,7 +17,9 @@ header {
 
 body {
     background-color: #f1f2f5;
-    font-family: Oswald, sans-serif;
+    font-family: "ariel", sans-serif;
+    margin: 0;
+    padding: 0;
 }
     
 
@@ -86,10 +89,11 @@ nav ul.flexbox li.button a {
 }
 .header-container2 {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: line;
     padding: 10px;
     background-color: #f0f0f0; 
+    width: 100%;
 }
 
 nav ul.flexbox2 {
@@ -97,17 +101,15 @@ nav ul.flexbox2 {
     align-content: right;
     margin: 0;
     padding: 5px;
-    margin-left: 0%;
-     /*  halfway across the screen */
 }
 
 nav ul.flexbox2 li.button {
-    margin-left: 20px;
+    margin-right: 5px;
 }
 
 nav ul.flexbox2 li.button a {
     text-decoration: none;
-    text: white;
+    
     color: rgb(157, 157, 158);
     background-color: #0b0b31;
     padding: 10px;
@@ -151,11 +153,13 @@ nav ul.flexbox2 li.button a {
 /* Just below "Think Big" */
 .flex-container {  
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 5%;
-    margin: 20px 0;
+    margin-right: 5%;
+    margin-left: 5%;
     border: rgba(0, 0, 0, 0.1); /* border with transparency */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Add a thin border on top */
 }
 
 .flex-item {
@@ -169,20 +173,28 @@ nav ul.flexbox2 li.button a {
 
 .flex-item img {
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+
     width: 275px; /* Adjust the size as needed */
     height: auto;
+    justify-items: left;
+    align-content: left;
 }
 
 .flex-item h2 {
-    text-align: center;
-    margin: 10px 0;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 5%;
+    font-weight: bold;
+    margin: 0 0;
+    font-size: 300%;
+    color: #0b0b31;
 }
 
 .more-button {
     background-color: #0b0b31;
     color: white;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     text-align: left;
     text-decoration: none;
@@ -190,47 +202,89 @@ nav ul.flexbox2 li.button a {
     font-size: 16px;
     margin-top: 10px;
     cursor: pointer;
+    align-items: bottom;
 }
 
 .more-button:hover {
     background-color: darkblue;
+    
 }
 
 /* footer begins here */
 
 footer {
-    background-color: #0b0b31;
+    background: linear-gradient(45deg, #213349, #1c2d40);
+    
     color: white;
     text-align: left;
-    padding: 10px;
-    position: bottom;
+    padding: 0px;
+    position: relative;
     bottom: 0;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    height: fit-content;
+    width: auto;
     padding: 20px;
-    background-color: #0b0b31;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-right: #cdd1d1c5;
+    background: linear-gradient(45deg, #213349, #1c2d40);
 }
 
 .flex-item4 {
-    flex: 1;
+    flex:.5;
     flex-direction: column;
-    margin: 10px;
+    margin-right: px;
     align-items: left;
-    border-right: #cdd1d1;
+    border-right: #cdd1d1c5;
 }
 
 .flex-item4 h2 {
-    flex: 1;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 200%;
+}
+
+.flex-item5 {
+    flex:.7;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: left;
+    border-right: #cdd1d1c5;
+    height: 100%;
+}
+
+.flex-item5 h2 {
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.flex-item6 {
+    flex:.7;
+    flex-direction: column;
+    margin-right: px;
+    align-items: left;
+    border-right: #cdd1d1c5;
+}
+
+.flex-item6 h2 {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 200%;
 }
 
 .news-item {
@@ -248,23 +302,45 @@ footer {
     background-color: #bd8441;
     color: white;
     padding: 25px 25px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 10px;
     font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+
 }
 .news-date2 {
     background-color: #bc6142;
     color: white;
     padding: 25px 25px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 10px;
     font-weight: bold;
+    font-size: 25px;
+    text-align: center;
 }
 .news-date3 {
     background-color: #bd425e;
     color: white;
     padding: 25px 25px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 10px;
     font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.footer-container2 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    background: #0b0b31;
+    width: 100vw;
+    bottom: 0;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 5%;
 }
