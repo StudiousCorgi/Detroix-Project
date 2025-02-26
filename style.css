@@ -1,0 +1,270 @@
+.oswald> {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+header {
+    font-family: Oswald, serif;
+    margin: 0;
+    padding: 5px;
+    background-color: #0b0b31;
+    color: #f1f2f5;
+    
+}
+
+body {
+    background-color: #f1f2f5;
+    font-family: Oswald, sans-serif;
+}
+    
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul.flexbox {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #dddddd;
+
+}
+
+nav ul.flexbox li.button {
+    margin-left: 20px;
+    
+}
+
+nav ul.flexbox li.button a {
+    text-decoration: none;
+    outline-color: #dddddd;
+}
+
+.button {
+    font-size: xx-small;
+    color: #f0f3f3;
+   }
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul.flexbox {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.flexbox li.button {
+    margin-left: 20px;
+}
+
+nav ul.flexbox li.button a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Title line and hyperlinks*/
+.header-container2 img{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    margin-right: 21%;
+    background-color: #f1f2f5;
+    color: #f1f2f5;
+}
+.header-container2 {
+    display: flex;
+    justify-content: right;
+    align-items: line;
+    padding: 10px;
+    background-color: #f0f0f0; 
+}
+
+nav ul.flexbox2 {
+    display: flex;
+    align-content: right;
+    margin: 0;
+    padding: 5px;
+    margin-left: 0%;
+     /*  halfway across the screen */
+}
+
+nav ul.flexbox2 li.button {
+    margin-left: 20px;
+}
+
+nav ul.flexbox2 li.button a {
+    text-decoration: none;
+    text: white;
+    color: rgb(157, 157, 158);
+    background-color: #0b0b31;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*The Big Picture*/
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color with transparency */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    align-items: left;
+    
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Just below "Think Big" */
+.flex-container {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 20px 0;
+    border: rgba(0, 0, 0, 0.1); /* border with transparency */
+}
+
+.flex-item {
+    border-right: 1px solid rgba(0, 0, 0, 0.1); /* Add a thin border between sections */
+    padding: 0 10px; /* Add some padding for spacing */
+}
+
+.flex-item:last-child {
+    border-right: none; /* Remove the border from the last item */
+}
+
+.flex-item img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    width: 275px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.flex-item h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.more-button {
+    background-color: #0b0b31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.more-button:hover {
+    background-color: darkblue;
+}
+
+/* footer begins here */
+
+footer {
+    background-color: #0b0b31;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #0b0b31;
+}
+
+.flex-item4 {
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
+    align-items: left;
+    border-right: #cdd1d1;
+}
+
+.flex-item4 h2 {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    margin: 0;
+    color: #7a7a7a;
+}
+
+.news-date {
+    background-color: #bd8441;
+    color: white;
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.news-date2 {
+    background-color: #bc6142;
+    color: white;
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.news-date3 {
+    background-color: #bd425e;
+    color: white;
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
